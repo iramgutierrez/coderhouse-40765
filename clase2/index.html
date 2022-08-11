@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 2</title>
+</head>
+
+<body>
+  <h1>Etiquetas HTML</h1>
+
+  <!-- LISTAS -->
+  <h2 id="listas">Listas</h2>
+
+  <ul>
+    <li>Desarrollo Web</li>
+    <li>Diseño web</li>
+    <li>Redes sociales</li>
+    <li>React</li>
+    <li>Backend</li>
+    <li>Javascript</li>
+  </ul>
+
+  <ol>
+    <li>Crear Sketch</li>
+    <li>Crear Wireframe</li>
+    <li>Crear prototipo</li>
+    <li>Crear la página</li>
+  </ol>
+
+  <ul>
+    <li>Capitulo 1</li>
+    <li>
+      Capitulo 2
+      <ul>
+        <li>Capitulo 2.1</li>
+        <li>Capitulo 2.2</li>
+        <li>
+          Capitulo 2.3
+          <ul>
+            <li>Capitulo 2.3.1</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>Glosario de desarrollo web</p>
+  <dl>
+    <dt>Sketch</dt>
+    <dd>Dibujo rapido</dd>
+    <dt>Wireframe</dt>
+    <dd>Dibujo de baja calidad</dd>
+    <dt>Mockup</dt>
+    <dd>Dibujo de calidad media o alta</dd>
+    <dt>Prototipo</dt>
+    <dd>Diseño navegable (interactivo)</dd>
+  </dl>
+
+  <!-- TABLAS -->
+
+  <h2 id="tablas">Tablas</h2>
+
+  <table border="1">
+    <tr>
+      <th>Curso</th>
+      <th>Fecha de inicio</th>
+      <th>Fecha de fin</th>
+      <th>Profesor</th>
+    </tr>
+    <tr>
+      <td>Desarrollo Web</td>
+      <td>21 de junio</td>
+      <td>4 de septiembre</td>
+      <td>Iram</td>
+    </tr>
+    <tr>
+      <td>React JS</td>
+      <td>21 de junio</td>
+      <td>4 de diciembre</td>
+      <td>Josefina</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>21 de marzo</td>
+      <td>4 de octubre</td>
+      <td>Mariano</td>
+    </tr>
+  </table>
+
+  <!-- ENLACES -->
+
+  <h2>Enlaces</h2>
+
+  <a href="desafio-maria.html" target="_blank">Desafio Maria</a>
+
+  <a href="img/favicon.png">Favicon</a>
+
+  <a href="http://coderhouse.com">Coderhouse</a>
+
+  <a href="#listas">Ir a listas</a>
+
+  <a href="#tablas">Ir a tablas</a>
+
+  <!-- FORMULARIOS -->
+
+  <h2>Formularios</h2>
+
+  <form action="guardar.php" method="POST">
+    <fieldset>
+      <legend>Primer formulario</legend>
+
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+      </div>
+
+      <div>
+        <label for="contrasenia">Contraseña:</label>
+        <input type="password" name="contrasenia">
+      </div>
+
+      <div>
+        <label for="description">Descripción:</label>
+        <textarea name="description"></textarea>
+      </div>
+
+      <div>
+        <label for="genero">Genero:</label>
+        <input type="radio" name="genero" value="Masculino"> Masculino
+
+        <input type="radio" name="genero" value="Femenino"> Femenino
+      </div>
+
+      <div>
+        <label for="horario">Horario:</label>
+        <input type="checkbox" name="horario" value="Maniana"> Mañana
+        <input type="checkbox" name="horario" value="Tarde"> Tarde
+        <input type="checkbox" name="horario" value="Noche"> Noche
+
+      </div>
+
+      <div>
+        <label for="curso">Curso</label>
+        <select name="curso">
+          <option value=""></option>
+          <option value="desarrolo_web">Desarrollo Web</option>
+          <option value="frontend">Frontend</option>
+          <option value="react">React</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="reset" value="Limpiar formulario">
+
+        <input type="submit" value="Enviar formulario">
+      </div>
+
+    </fieldset>
+
+  </form>
+
+  <div style="background-color: black;">
+    <img src="img/ch.svg" alt="coderhouse">
+  </div>
+
+  <iframe src="desafio-pedro.html" frameborder="0"></iframe>
+  
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</body>
+
+</html>

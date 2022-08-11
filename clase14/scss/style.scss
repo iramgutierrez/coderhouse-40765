@@ -1,0 +1,163 @@
+$ancho: 820px;
+
+.box_uno {
+  width: $ancho;
+}
+
+.box_dos {
+  width: $ancho/2;
+}
+
+.box_tres {
+  width: $ancho*2;
+}
+
+$vista: desktop;
+
+@if $vista == desktop {
+  h1 {
+    font-size: 32px;
+  }
+} @else if $vista == mobile {
+  h1 {
+    font-size: 24px;
+  }
+} @else {
+  h1 {
+    font-size: 28px;
+  }
+}
+
+$enable-gradients: false;
+
+div.cuadrado {
+  width: 150px;
+  height: 150px;
+  background-color: aqua;
+  @if $enable-gradients {
+    background-image: linear-gradient(to top, red, yellow);
+  }
+}
+
+@for $i from 1 through 10 {
+  .col-#{$i} {
+    width: 10% * $i;
+  }
+}
+
+@each $color in blue,yellow, red, aqua, green {
+  .#{$color} {
+    color: #{$color};
+  }
+}
+
+$redes: (
+  twitter: #55acee,
+  facebook: #3a5795,
+  send-mail: #c25e30,
+  instagram: green
+);
+
+
+@each $red, $color in $redes {
+  .btn--#{$red} {
+    background-color: $color;
+  }
+}
+
+$estilos: (
+  color: blue,
+  centro: center
+);
+
+div.otro {
+  background-color: map-get($estilos, color);
+}
+
+$colores: (
+ 1: bisque,
+ 2: aqua,
+ 3: #00ff15,
+ 4: #450e47,
+ 5: #e5782f,
+ 6: #a1d716,
+ 7: #0b2121,
+ 8: #5027a8,
+ 9: #3bc76c,
+ 10: #254418,
+ 11: #95ca87,
+ 12: #5900ff
+);
+
+@each $id,$color in $colores {
+  .row{
+      div:nth-child(#{$id}){
+          background-color: $color;
+      }
+  }
+}
+
+.boton {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.boton--aceptar {
+  @extend .boton;
+  background-color: green;
+  color: yellow;
+}
+
+.boton--cancelar {
+  @extend .boton;
+  background-color: red;
+  color: yellow;
+}
+
+@mixin cuadrado($lado, $color) {
+  width: $lado;
+  height: $lado;
+  background-color: $color;
+}
+
+div.cuadradoChico {
+  @include cuadrado(50px, red)
+}
+
+div.cuadradoMediano {
+  @include cuadrado(250px, green)
+}
+
+div.cuadradoGrande {
+  @include cuadrado(500px, yellow)
+}
+
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 400px;
+}
+
+.box1 {
+  @include flex-row-center;
+  div {
+    width: 30px;
+    border: 1px solid red;
+    border-radius: 20px;
+  }
+}
+
+.box2 {
+  @include flex-row-center;
+}
+
+.box3 {
+  @include flex-row-center;
+}

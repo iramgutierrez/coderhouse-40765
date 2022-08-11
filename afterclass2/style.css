@@ -1,0 +1,13 @@
+.row > div {
+  border: 2px solid black;
+  padding-right: 10px;
+}
+
+#carouselContainer {
+  width: 920px;
+}
+
+#alerts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

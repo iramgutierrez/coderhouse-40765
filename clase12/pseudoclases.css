@@ -1,0 +1,30 @@
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: blue; 
+  color: white;
+}
+
+a:link {
+  background-color:darkcyan;
+}
+
+a:visited {
+  background-color: deeppink;
+}
+
+a:active {
+  background-color: darkkhaki;
+}
+
+div:not(.padre) {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.padre div:nth-child(2){
+  font-weight: bold;
+  color: orange;
+}

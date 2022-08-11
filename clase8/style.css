@@ -1,0 +1,109 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.grid > * {
+  height: 120px;
+  background-color: blanchedalmond;
+}
+
+.gradient {
+  background-image: linear-gradient(to top, red, green);
+}
+
+.radial {
+  background-image: radial-gradient(rgb(80, 32, 203), chocolate);
+}
+
+.translate {
+  transform: translate(10px, 10px);
+  background-color: darkgoldenrod;
+}
+
+.translateX {
+  transform: translateX(-10px);
+  background-color: blue;
+}
+
+.rotate {
+  transform: rotateZ(45deg);
+}
+
+.rotateX {
+  transform: rotateX(60deg);
+  background-color: lawngreen;
+}
+
+.scale {
+  transform: scale(1.5, 0.5);
+}
+
+.skew {
+  transform: skew(20deg, 10deg);
+  background-color: indianred;
+}
+
+.skewY {
+  transform: skewY(15deg);
+  background-color: mediumpurple;
+}
+
+.transition {
+  transition: 2s linear;
+  width: 200px;
+}
+
+.transition:hover {
+  background-color: lightcoral;
+  height: 80px;
+  width: 80px;
+}
+
+input {
+  transition: 2s linear;
+}
+
+input:focus {
+  height: 40px;
+  background-color: aqua;
+}
+
+@keyframes efecto {
+  0% { width: 100px; }
+  12% { width: 60px; background-color: darkorange;}
+  25% { width: 100px; background-color: darkgrey;}
+  50% { width: 50px; background-color: chartreuse;}
+  75% { width: 200px; background-color: aquamarine;}
+  100% { width: 100px; background-color: darkgreen; }
+}
+
+.animation {
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}

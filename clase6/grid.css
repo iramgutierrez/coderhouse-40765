@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.5fr;
+  gap: 10px;
+}
+
+.grid > * {
+  border: 1px solid blue;
+  background-color: orange;
+}
+
+.grid > nav {
+  grid-row: 1/5;
+}
+
+.grid > header {
+  grid-column: 2/4;
+}
+
+.grid > aside {
+  grid-row: 2/4;
+  grid-column: 3/4;
+}
+
+.grid > footer {
+  grid-column: 2/4;
+}
+
+
+/*
+
+|=======|=======|=====|
+|       |       |_____|
+|_______|______ |_____|
+*/
+
+.grid-list {
+  list-style: none;
+  display: grid;
+  grid-template-areas: 
+  "nosotros servicios clientes"
+  "historia servicios contacto"
+  ;
+  gap: 4px;
+}
+
+.grid-list li {
+  border: 1px solid black;
+}
+
+.grid-list #nosotros {
+  grid-area: nosotros;
+}
+
+.grid-list #servicios {
+  grid-area: servicios;
+}
+
+.grid-list li:nth-child(3) {
+  grid-area: clientes;
+}
+
+.grid-list li:nth-child(4) {
+  grid-area: contacto;
+}
+
+.grid-list li:nth-child(5) {
+  grid-area: historia;
+}

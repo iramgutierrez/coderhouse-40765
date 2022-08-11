@@ -1,0 +1,29 @@
+#indexPage > header {
+  background-color: aqua;
+}
+
+#contactPage > header {
+  background-color: bisque;
+}
+
+.grid {
+  display: grid;
+}
+
+#indexPage .grid {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#contactPage .grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  display: inline-block
+}

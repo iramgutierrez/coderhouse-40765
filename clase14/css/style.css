@@ -1,0 +1,169 @@
+.box_uno {
+  width: 820px; }
+
+.box_dos {
+  width: 410px; }
+
+.box_tres {
+  width: 1640px; }
+
+h1 {
+  font-size: 32px; }
+
+div.cuadrado {
+  width: 150px;
+  height: 150px;
+  background-color: aqua; }
+
+.col-1 {
+  width: 10%; }
+
+.col-2 {
+  width: 20%; }
+
+.col-3 {
+  width: 30%; }
+
+.col-4 {
+  width: 40%; }
+
+.col-5 {
+  width: 50%; }
+
+.col-6 {
+  width: 60%; }
+
+.col-7 {
+  width: 70%; }
+
+.col-8 {
+  width: 80%; }
+
+.col-9 {
+  width: 90%; }
+
+.col-10 {
+  width: 100%; }
+
+.blue {
+  color: blue; }
+
+.yellow {
+  color: yellow; }
+
+.red {
+  color: red; }
+
+.aqua {
+  color: aqua; }
+
+.green {
+  color: green; }
+
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--send-mail {
+  background-color: #c25e30; }
+
+.btn--instagram {
+  background-color: green; }
+
+div.otro {
+  background-color: blue; }
+
+.row div:nth-child(1) {
+  background-color: bisque; }
+
+.row div:nth-child(2) {
+  background-color: aqua; }
+
+.row div:nth-child(3) {
+  background-color: #00ff15; }
+
+.row div:nth-child(4) {
+  background-color: #450e47; }
+
+.row div:nth-child(5) {
+  background-color: #e5782f; }
+
+.row div:nth-child(6) {
+  background-color: #a1d716; }
+
+.row div:nth-child(7) {
+  background-color: #0b2121; }
+
+.row div:nth-child(8) {
+  background-color: #5027a8; }
+
+.row div:nth-child(9) {
+  background-color: #3bc76c; }
+
+.row div:nth-child(10) {
+  background-color: #254418; }
+
+.row div:nth-child(11) {
+  background-color: #95ca87; }
+
+.row div:nth-child(12) {
+  background-color: #5900ff; }
+
+.boton, .boton--aceptar, .boton--cancelar {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px; }
+
+.boton--aceptar {
+  background-color: green;
+  color: yellow; }
+
+.boton--cancelar {
+  background-color: red;
+  color: yellow; }
+
+div.cuadradoChico {
+  width: 50px;
+  height: 50px;
+  background-color: red; }
+
+div.cuadradoMediano {
+  width: 250px;
+  height: 250px;
+  background-color: green; }
+
+div.cuadradoGrande {
+  width: 500px;
+  height: 500px;
+  background-color: yellow; }
+
+.box1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 400px; }
+  .box1 div {
+    width: 30px;
+    border: 1px solid red;
+    border-radius: 20px; }
+
+.box2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 400px; }
+
+.box3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 400px; }

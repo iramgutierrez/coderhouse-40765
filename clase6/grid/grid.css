@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    grid-column-gap: 10px;
+    gap: 10px;
+}
+
+.grid > * {
+    border: 1px; scrollbar-width:  blue;
+    background-color: yellow;
+}
+
+.grid > nav {
+    grid-row: 1/5;
+}
+.grid > header {
+    grid-column: 2/4;
+}
+
+.grid > aside {
+    grid-row: 2/4;
+    grid-column: 3/4;
+}
+
+.grid > footer {
+    grid-column: 2/4;
+}
+
+.grid {
+    list-style: none;
+    display: grid;
+    grid-template-areas: 
+    "nosotros servicos clientes"
+    "ellos trabajan contactos"
+    ;
+}
+
+.grid-list li:nth-child(3) {
+    grid-area: nosotros;
+}
+
+.grid-list li:nth-child(4) {
+    grid-area: servicios;
+}

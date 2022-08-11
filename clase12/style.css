@@ -1,0 +1,46 @@
+/*.row > div {
+  background-color: darkseagreen;
+  border: 2px solid black;
+}
+
+section {
+  width: 600px;
+}*/
+
+.row > div {
+  border: 2px solid black;
+}
+
+
+/* xs breakpoint */
+.row>div{
+  background-color: aqua;
+}
+
+/* sm breakpoint */
+@media (max-width: 768px) and (min-width:577px){
+  .row>div{
+      background-color: bisque;
+  }
+}
+
+/* md breakpoint */
+@media (max-width: 992px) and (min-width:768px){
+  .row>div{
+      background-color: cadetblue;
+  }
+}
+
+/* lg breakpoint */
+@media (max-width: 1200px) and (min-width:992px){
+  .row>div{
+      background-color: sandybrown;
+  }
+}
+
+/* xl breakpoint */
+@media (min-width:1201px){
+  .row>div{
+      background-color:lemonchiffon;
+  }
+}

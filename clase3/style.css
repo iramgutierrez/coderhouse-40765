@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  color: red;
+}
+
+section {
+  background-color: blue !important;
+  padding: 30px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+section {
+  background-color: red;
+}
+
+section article {
+  background-color: #cccccc;
+  width: 500px;
+  height: 500px;
+}
+
+section article p {
+  line-height: 4;
+}
+
+.bordesRedondos {
+  border-radius: 30px;
+}
+
+.imgChica {
+  width: 240px;
+}
+
+.imgGrande {
+  width: 480px;
+}
+/* CONTENEDOR PRINCIPAL */
+#principal {
+  background-color: yellow;
+  text-align: center;
+}
+
+.parrafoContenedor {
+  background-color: rgb(222, 154, 38, 0.6);
+}
+
+#contenedorListas {
+  margin-left: 30px;
+}
+
+ol {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+/*ol, ul {
+  list-style-type: none;
+}*/
+
+.normal {
+  font-style: normal;
+  font-weight: normal;
+}
+
+.italica {
+  font-style: italic;
+}
+
+.negrita {
+  font-weight:bold;
+}
+
+.pequenio {
+  font-size: 20px;
+}
+
+.grande {
+  font-size: 40px;
+}
+
+.impact {
+  font-family: Impact, sans-serif;
+}
+
+.comicSans {
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.alaDerecha {
+  text-align: right;
+}
+
+.interlineado {
+  line-height: 1.6;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+.tachado {
+  text-decoration: line-through;
+}
+
+.fondos {
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+  margin-bottom: 10px;
+}
+
+.fondoImagen {
+  background-image: url('img/favicon.png');
+}
+
+.fondoRepeatX {
+  background-repeat: repeat-x;
+}
+
+.fondoNoRepeat {
+  background-repeat: no-repeat;
+}
+
+.fondoCentro {
+  background-position: center;
+}
+
+.fondoDerecha {
+  background-position: right;
+}
+
+.fondoCover {
+  background-size: cover;
+}
+
+.relative {
+  position: relative;
+  float: left;
+}

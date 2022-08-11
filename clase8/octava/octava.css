@@ -1,0 +1,69 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.grid > * {
+    height: 120px;
+    background-color: blueviolet;
+}
+
+.gradient {
+    background-image: linear-gradient(red, green);
+}
+
+.radial {
+    background-image: radial-gradient(blue, yellow);
+}
+
+.translate {
+    transform: translate(10px, 10px);
+    background-color: bisque, orangered;
+}
+.translateX {
+    transform: rotateX(70deg);
+}
+
+.rotateX {
+    transform-origin: 60deg;
+    background-color: red;
+}
+
+.scale {
+    transform: scale(2, 1.25);
+    background-color: deeppink;
+}
+
+.skew {
+    transform: skew(10deg, 5deg);
+    background-color: aquamarine;
+}
+
+.skewY {
+    transform: skew(10deg, 40deg);
+    background-color: yellowgreen;
+}
+
+.transition {
+    transition: 4s;
+    width: 200px;
+}
+
+.transition:hover {
+    background-color: rgb(91, 226, 86);
+    height: 60px;
+    width: 60px;
+}
+
+input {
+    transition: 2s linear;
+}
+
+input:focus {
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    background-color: darkgrey;
+}

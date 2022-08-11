@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.padre-flex {
+  display: flex;
+  height: 500px;
+  background-color: bisque;
+  /*flex-direction: column;
+  flex-wrap: wrap;*/
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: space-between;
+}
+
+.hijo-flex {
+  background-color: coral;
+  margin: 10px;
+  padding: 10px;
+}
+
+.padre-flex .hijo-flex img {
+  width: 80px;
+}

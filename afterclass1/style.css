@@ -1,0 +1,18 @@
+
+
+.padre {
+  width: 400px;
+  height: 400px;
+  border: 3px solid blue;
+  background-image: url(./img/js.png);
+}
+
+.hijo {
+  width: 100px;
+  height: 100px;
+  border: 2px solid orange;
+}
+
+.padre img {
+  width: 50px;
+}

@@ -1,0 +1,35 @@
+.menu {
+  list-style: none;
+  font-size:0; /* truco por el uso de inline-block*/
+ }
+ a {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+ }
+ .menu li {
+  display: inline-block;
+  width: 24%;
+  position:relative;
+  font-size: 14px;
+ }
+ .menu ul {
+  position: absolute;
+  display: none;
+ }
+ .menu ul li {
+  display: block;
+ }
+ .menu li:hover ul {
+  display:block;
+ }
+
+ .menu li{
+  border: 2px solid orange;
+ }
+
+ .submenu li {
+  border: 1px solid gray;
+ }
+ 
+ 

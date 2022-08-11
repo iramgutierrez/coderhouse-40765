@@ -1,0 +1,33 @@
+.noticia {
+  background-color: darkgrey;
+}
+
+.noticia__titulo {
+  font-family: 'Times New Roman', Times, serif;
+  color: aliceblue;
+  font-size: 16px;
+}
+
+.noticia--destacada {
+  background-color: coral;
+}
+
+.noticia__titulo--uppercase {
+  text-transform: uppercase;
+}
+
+.card {
+  background-color: greenyellow;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.card__image {
+  width: 200px;
+  border-radius: 20px;
+}
+
+.btn {
+  background-color: red;
+}
