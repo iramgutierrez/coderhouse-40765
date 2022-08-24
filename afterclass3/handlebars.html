@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendiendo Handlebars</title>
+</head>
+<body>
+  <div id="saludo"></div>
+
+  
+  <!-- JS SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+  <script>
+
+    
+    var h1 = document.getElementById("saludo")
+    // var contenido = "Bienvenido Iram"
+
+    var template = Handlebars.compile(`
+    {{#each students}}
+      <section>
+        <h2>Bienvenido <b style="color: blue;">{{this}}</b> al curso de {{course}}</h2>
+        <p>
+          Estamos en la clase de {{class}}
+          {{#if afterclass}}
+          En realidad es una afterclass
+          {{/if}}
+        </p>
+      </section>
+    {{/each}}
+    `);
+    // execute the compiled template and print the output to the console
+    var params = {
+      students: [
+        'Martin',
+        'Alejandro',
+        'Denis',
+        'Emiliano',
+        'Federico',
+        'Francisco',
+        'Franco',
+        'Jose',
+        'Juan',
+        'Kenneth',
+        'Maria',
+        'Nicolas'
+      ],
+      course: 'Desarrollo Web',
+      class: 'Motores de plantillas',
+      afterclass: true
+    }
+    var contenido = template(params);
+
+    console.log(contenido)
+
+    h1.innerHTML = contenido
+  </script>
+</body>
+</html>
